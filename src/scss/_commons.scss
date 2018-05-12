@@ -1,0 +1,16 @@
+/* Default properties */
+*{
+	margin : 0;
+	padding : 0;
+	color : white;
+	box-sizing : border-box;
+	font-family: $josefin-font;
+}
+.page-header {
+    font-size: 30px;
+    font-family: $pacifico-font;
+}
+.page-content {
+	font-size: 17px;
+	font-family: $josefin-font;
+}

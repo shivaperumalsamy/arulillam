@@ -1,0 +1,83 @@
+@import '_variable';
+@import '_mixin';
+
+/*--- START : Document Styles ---*/
+html, body {
+  @extend.boxSizeProperties;
+ // background-color: #333333;
+ background-color: #000;
+}
+/*--- END : Document Styles ---*/
+
+
+/*--- START : Wrapper Styles ---*/
+ .height-100vh{
+  //@extend.boxSizeProperties;
+  //background-image : linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.2)), url('../assets/img/bg_pattern/2.png');
+  background-size : cover;
+  background-attachment : fixed;
+
+}
+  //Menubar styles
+  .menuBar{
+    @extend.boxSizeProperties;
+    @include boxSize(8%); 
+    @include position(fixed,0, '', 0, '');
+    background-color : $menu-color;
+    //border-right: 12px solid #ffffff;
+    height: 100vh;
+		z-index : 2;
+    
+		.menuBar__menuIcon{
+      display: block;
+      @include margin('', '', '', auto);
+      background:  linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0));
+      color: #ffffff;
+      font-size: $fontsize-M;
+
+      span {
+        cursor: pointer;
+        text-decoration: none;
+        font-family: 'Linearicons-Free';
+        line-height: 100px;
+        margin-left: 30%;
+      }
+      
+      
+    }
+    .logo{
+      .logoIcon{
+        width: 100%;
+        position: absolute;
+        bottom: 0px;
+        padding: 5px;
+      }
+    }
+  }
+
+  @for $i from 1 through length($menuImagesList){
+    .menuBar .menuBar__menuIcon:nth-of-type(#{$i}){
+      & span::after{
+        content: nth($menuImagesList , $i );
+        color: unquote("#"+nth($menuColors , $i ));
+      }
+    }
+    .menuBar .menuBar__menuIcon:nth-of-type(#{$i}):hover,
+      .menuBar .menuBar__menuIcon:nth-of-type(#{$i}):active{
+        margin-left: 1px;
+        border-left: 5px solid unquote("#"+nth($menuColors , $i ));
+        transition: all 0.5s; 
+    }
+  }
+  #menu-hover-effect{
+    width: 2px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 7.8%;
+    z-index: 99;
+    transition: all 0.5s;
+    background-color: #4d95a3;
+  }
+
+/*--- END : Wrapper Styles ---*/

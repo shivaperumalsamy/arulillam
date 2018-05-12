@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="148px" height="177px" viewBox="0 0 148 177" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
+    <title>timeline-icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M77.8380984,26 C54.400404,26 35.3990542,45.0013497 35.3990542,68.4390442 C35.3990542,91.8809961 54.400404,110.878088 77.8380984,110.878088 C101.275793,110.878088 120.277143,91.8809961 120.277143,68.4390442 C120.277143,45.0013497 101.275793,26 77.8380984,26" id="path-1"></path>
+        <filter x="-18.9%" y="-16.5%" width="137.7%" height="137.7%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="timeline-icon">
+            <g id="symbol">
+                <path d="M77.8818156,176.019001 C39.6577246,176.019001 8.64162942,145.249843 8.21161904,107.127932 L8.19458893,107.127932 L8.19458893,16.6128762 L0.399054228,16.6128762 L17.016188,0 L33.6290642,16.6128762 L25.8377871,16.6128762 L25.8377871,106.706437 C26.0378909,135.282968 49.2584514,158.384318 77.8818156,158.384318 C106.624391,158.384318 129.930102,135.082865 129.930102,106.331774 C129.930102,77.5806845 106.624391,54.279231 77.8818156,54.279231 C58.1950037,54.279231 41.0669665,65.2083066 32.2240798,81.3273096 L32.2240798,53.7087221 C44.4517017,43.090446 60.4089186,36.6445479 77.8818156,36.6445479 C116.369873,36.6445479 147.564785,67.8479743 147.564785,106.331774 C147.564785,144.819832 116.369873,176.019001 77.8818156,176.019001" id="border" fill="#2B8A83" transform="translate(73.981919, 88.009501) scale(1, -1) translate(-73.981919, -88.009501) "></path>
+                <g id="content" transform="translate(77.838098, 68.439044) scale(1, -1) translate(-77.838098, -68.439044) ">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use fill="#47A59F" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

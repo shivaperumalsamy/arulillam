@@ -1,0 +1,87 @@
+@import '_commons';
+
+/* Mixin  - margin
+   Params - $top, $right, $bottom, $left   
+*/
+@mixin margin($top: null, $right: null, $bottom: null, $left: null){
+	margin-top : $top;
+	margin-right : $right;
+	margin-left : $left;
+	margin-bottom : $bottom; 
+}
+
+/* Mixin  - padding
+   Params - $top, $right, $bottom, $left   
+*/
+@mixin padding($top: null, $right: null, $bottom: null, $left: null){
+	padding-top : $top;
+	padding-right : $right;
+	padding-left : $left;
+	padding-bottom : $bottom; 
+}
+
+/* Mixin  - position
+   Params - $top, $bottom, $right, $left   
+*/
+@mixin position($position, $top: null, $bottom: null, $right: null, $left: null){
+	position : $position;
+	top : $top;
+	left : $left;
+	right: $right;
+	bottom: $bottom;
+}
+
+/* Mixin  - layoutSize
+   Params - $width, $height  
+*/
+ 
+ @mixin boxSize($width: null, $height: null){
+     width :  $width;
+     height : $height;
+ }
+
+ /*
+   Mixin - border-radius
+   Params - $radius 
+ */
+  
+ @mixin border-radius($radius) {
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+	border-radius: $radius;
+}
+
+/*
+  Mixin - border-radii
+  Params - $topleft, $topright, $bottomright, $bottomleft 
+*/
+@mixin border-radii($topleft: null, $topright: null, $bottomright: null, $bottomleft: null) {
+	-webkit-border-top-left-radius: $topleft;
+	-webkit-border-top-right-radius: $topright;
+	-webkit-border-bottom-right-radius: $bottomright;
+	-webkit-border-bottom-left-radius: $bottomleft;
+	-moz-border-radius-topleft: $topleft;
+	-moz-border-radius-topright: $topright;
+	-moz-border-radius-bottomright: $bottomright;
+	-moz-border-radius-bottomleft: $bottomleft;
+	border-top-left-radius: $topleft;
+	border-top-right-radius: $topright;
+	border-bottom-right-radius: $bottomright;
+	border-bottom-left-radius: $bottomleft;
+} 
+ 
+ /*
+    Class - setWidthHeightProperties
+ */
+
+ .boxSizeProperties{
+     width : 100%;
+     height : 100%;
+ }
+
+ .header {
+	margin: 0 0 20px 8%;
+	padding-top: 7%;
+	padding-bottom: 20px; 
+	font-size: $fontsize-M;
+}

@@ -1,0 +1,88 @@
+/*
+@import url('https://fonts.googleapis.com/css?family=Satisfy');
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+
+@font-face {
+	font-family: FOO;
+	src: url('../assets/fonts/FOO.ttf') format('truetype');
+}
+//There are multiple types futura fonts available, i've included everything in assets/futura fonts folder.
+@font-face{
+	font-family: FuturaBook;
+	src: url('../assets/fonts/futura fonts/Futura Book font.ttf') format('truetype')
+} 
+@font-face {
+	font-family: FuturaExtraBlack;
+	src: url('../assets/fonts/futura fonts/Futura Extra Black font.ttf') format('truetype');
+} */
+@font-face {
+  font-family: 'Linearicons-Free';
+  src: url("../assets/fonts/Linearicons-Free.eot?w118d");
+  src: url("../assets/fonts/Linearicons-Free.eot?#iefixw118d") format("embedded-opentype"), url("../assets/fonts/Linearicons-Free.woff2?w118d") format("woff2"), url("../assets/fonts/Linearicons-Free.woff?w118d") format("woff"), url("../assets/fonts/Linearicons-Free.ttf?w118d") format("truetype"), url("../assets/fonts/Linearicons-Free.svg?w118d#Linearicons-Free") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+/* Fonts */
+/* Theme colors */
+/* Font properties */
+/* Menubar properties */
+/* Menu dynamic customizations */
+/* Timeline specific variables */
+/* Footer height */
+/*Contact Page Icons */
+/* Default properties */
+* {
+  margin: 0;
+  padding: 0;
+  color: white;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif; }
+
+.page-header {
+  font-size: 30px;
+  font-family: "Pacifico", cursive; }
+
+.page-content {
+  font-size: 17px;
+  font-family: "Josefin Sans", sans-serif; }
+
+/* Mixin  - margin
+   Params - $top, $right, $bottom, $left   
+*/
+/* Mixin  - padding
+   Params - $top, $right, $bottom, $left   
+*/
+/* Mixin  - position
+   Params - $top, $bottom, $right, $left   
+*/
+/* Mixin  - layoutSize
+   Params - $width, $height  
+*/
+/*
+  Mixin - border-radius
+  Params - $radius 
+*/
+/*
+  Mixin - border-radii
+  Params - $topleft, $topright, $bottomright, $bottomleft 
+*/
+/*
+   Class - setWidthHeightProperties
+*/
+.boxSizeProperties {
+  width: 100%;
+  height: 100%; }
+
+/*--- START : Home Wrapper Styles ---*/
+.height-100vh {
+  height: 100vh; }
+
+.bounce-loader {
+  position: absolute;
+  top: -webkit-calc(50% - 50px);
+  left: -webkit-calc(50% - 50px);
+  top: calc(50% - 50px);
+  left: calc(50% - 50px); }
+
+/*--- END : Home Wrapper Styles ---*/
+
+/*# sourceMappingURL=homeScreen.css.map */

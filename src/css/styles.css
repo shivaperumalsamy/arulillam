@@ -1,0 +1,185 @@
+@charset "UTF-8";
+/*
+@import url('https://fonts.googleapis.com/css?family=Satisfy');
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+
+@font-face {
+	font-family: FOO;
+	src: url('../assets/fonts/FOO.ttf') format('truetype');
+}
+//There are multiple types futura fonts available, i've included everything in assets/futura fonts folder.
+@font-face{
+	font-family: FuturaBook;
+	src: url('../assets/fonts/futura fonts/Futura Book font.ttf') format('truetype')
+} 
+@font-face {
+	font-family: FuturaExtraBlack;
+	src: url('../assets/fonts/futura fonts/Futura Extra Black font.ttf') format('truetype');
+} */
+@font-face {
+  font-family: 'Linearicons-Free';
+  src: url("../assets/fonts/Linearicons-Free.eot?w118d");
+  src: url("../assets/fonts/Linearicons-Free.eot?#iefixw118d") format("embedded-opentype"), url("../assets/fonts/Linearicons-Free.woff2?w118d") format("woff2"), url("../assets/fonts/Linearicons-Free.woff?w118d") format("woff"), url("../assets/fonts/Linearicons-Free.ttf?w118d") format("truetype"), url("../assets/fonts/Linearicons-Free.svg?w118d#Linearicons-Free") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+/* Fonts */
+/* Theme colors */
+/* Font properties */
+/* Menubar properties */
+/* Menu dynamic customizations */
+/* Timeline specific variables */
+/* Footer height */
+/*Contact Page Icons */
+/* Default properties */
+* {
+  margin: 0;
+  padding: 0;
+  color: white;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif; }
+
+.page-header {
+  font-size: 30px;
+  font-family: "Pacifico", cursive; }
+
+.page-content {
+  font-size: 17px;
+  font-family: "Josefin Sans", sans-serif; }
+
+/* Mixin  - margin
+   Params - $top, $right, $bottom, $left   
+*/
+/* Mixin  - padding
+   Params - $top, $right, $bottom, $left   
+*/
+/* Mixin  - position
+   Params - $top, $bottom, $right, $left   
+*/
+/* Mixin  - layoutSize
+   Params - $width, $height  
+*/
+/*
+  Mixin - border-radius
+  Params - $radius 
+*/
+/*
+  Mixin - border-radii
+  Params - $topleft, $topright, $bottomright, $bottomleft 
+*/
+/*
+   Class - setWidthHeightProperties
+*/
+.boxSizeProperties, html, body, .menuBar {
+  width: 100%;
+  height: 100%; }
+
+.header {
+  margin: 0 0 20px 8%;
+  padding-top: 7%;
+  padding-bottom: 20px;
+  font-size: 30px; }
+
+/*--- START : Document Styles ---*/
+html, body {
+  background-color: #000; }
+
+/*--- END : Document Styles ---*/
+/*--- START : Wrapper Styles ---*/
+.height-100vh {
+  background-size: cover;
+  background-attachment: fixed; }
+
+.menuBar {
+  width: 8%;
+  position: fixed;
+  top: 0;
+  left: "";
+  right: 0;
+  bottom: "";
+  background-color: black;
+  height: 100vh;
+  z-index: 2; }
+  .menuBar .menuBar__menuIcon {
+    display: block;
+    margin-top: "";
+    margin-right: "";
+    margin-left: auto;
+    margin-bottom: "";
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+    color: #ffffff;
+    font-size: 30px; }
+    .menuBar .menuBar__menuIcon span {
+      cursor: pointer;
+      text-decoration: none;
+      font-family: 'Linearicons-Free';
+      line-height: 100px;
+      margin-left: 30%; }
+  .menuBar .logo .logoIcon {
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    padding: 5px; }
+
+.menuBar .menuBar__menuIcon:nth-of-type(1) span::after {
+  content: "";
+  color: #4d95a3; }
+
+.menuBar .menuBar__menuIcon:nth-of-type(1):hover,
+.menuBar .menuBar__menuIcon:nth-of-type(1):active {
+  margin-left: 1px;
+  border-left: 5px solid #4d95a3;
+  transition: all 0.5s; }
+
+.menuBar .menuBar__menuIcon:nth-of-type(2) span::after {
+  content: "";
+  color: #d5ad3f; }
+
+.menuBar .menuBar__menuIcon:nth-of-type(2):hover,
+.menuBar .menuBar__menuIcon:nth-of-type(2):active {
+  margin-left: 1px;
+  border-left: 5px solid #d5ad3f;
+  transition: all 0.5s; }
+
+.menuBar .menuBar__menuIcon:nth-of-type(3) span::after {
+  content: "";
+  color: #d76841; }
+
+.menuBar .menuBar__menuIcon:nth-of-type(3):hover,
+.menuBar .menuBar__menuIcon:nth-of-type(3):active {
+  margin-left: 1px;
+  border-left: 5px solid #d76841;
+  transition: all 0.5s; }
+
+.menuBar .menuBar__menuIcon:nth-of-type(4) span::after {
+  content: "";
+  color: #51d3c1; }
+
+.menuBar .menuBar__menuIcon:nth-of-type(4):hover,
+.menuBar .menuBar__menuIcon:nth-of-type(4):active {
+  margin-left: 1px;
+  border-left: 5px solid #51d3c1;
+  transition: all 0.5s; }
+
+.menuBar .menuBar__menuIcon:nth-of-type(5) span::after {
+  content: "";
+  color: #d06182; }
+
+.menuBar .menuBar__menuIcon:nth-of-type(5):hover,
+.menuBar .menuBar__menuIcon:nth-of-type(5):active {
+  margin-left: 1px;
+  border-left: 5px solid #d06182;
+  transition: all 0.5s; }
+
+#menu-hover-effect {
+  width: 2px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 7.8%;
+  z-index: 99;
+  transition: all 0.5s;
+  background-color: #4d95a3; }
+
+/*--- END : Wrapper Styles ---*/
+
+/*# sourceMappingURL=styles.css.map */

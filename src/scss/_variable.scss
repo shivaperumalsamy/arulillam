@@ -1,0 +1,66 @@
+/*
+@import url('https://fonts.googleapis.com/css?family=Satisfy');
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+
+@font-face {
+	font-family: FOO;
+	src: url('../assets/fonts/FOO.ttf') format('truetype');
+}
+//There are multiple types futura fonts available, i've included everything in assets/futura fonts folder.
+@font-face{
+	font-family: FuturaBook;
+	src: url('../assets/fonts/futura fonts/Futura Book font.ttf') format('truetype')
+} 
+@font-face {
+	font-family: FuturaExtraBlack;
+	src: url('../assets/fonts/futura fonts/Futura Extra Black font.ttf') format('truetype');
+} */
+
+@font-face {
+	font-family: 'Linearicons-Free';
+	src:url('../assets/fonts/Linearicons-Free.eot?w118d');
+	src:url('../assets/fonts/Linearicons-Free.eot?#iefixw118d') format('embedded-opentype'),
+		url('../assets/fonts/Linearicons-Free.woff2?w118d') format('woff2'),
+		url('../assets/fonts/Linearicons-Free.woff?w118d') format('woff'),
+		url('../assets/fonts/Linearicons-Free.ttf?w118d') format('truetype'),
+		url('../assets/fonts/Linearicons-Free.svg?w118d#Linearicons-Free') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Fonts */
+$josefin-font: 'Josefin Sans', sans-serif;
+$pacifico-font : 'Pacifico', cursive;
+
+/* Theme colors */
+$theme-dark : black;
+$theme-light : white;
+$theme-color-1 : salmon;
+$about-shadow : #21201c;
+
+/* Font properties */
+$fontsize-L : 50px;
+$fontsize-M : 30px;
+$fontsize-S : 15px;
+
+/* Menubar properties */
+
+$menuBar-width: 100px;
+$menuItem-height : 100px;
+$menu-color : $theme-dark;
+
+/* Menu dynamic customizations */
+$menuImagesList : "\e800","\e82b","\e863","\e827","\e831";
+$menuColors : 4d95a3,d5ad3f,d76841,51d3c1,d06182;
+
+/* Timeline specific variables */
+$timeline-screen-margin : 7%;
+$timeline-header-height : 20%;
+$timeline-body-height : 80%;
+
+/* Footer height */
+$footer-height : 20px;
+
+/*Contact Page Icons */
+$closeIcon : "\e870";
+$contactPageThemeColor:  #d06182;

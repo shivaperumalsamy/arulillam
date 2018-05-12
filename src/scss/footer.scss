@@ -1,0 +1,17 @@
+@import '_variable';
+@import '_commons';
+@import '_mixin';
+
+.footer{
+    @include boxSize(92%,$footer-height);
+    position: fixed;
+    bottom: 0;
+    padding-right: 5px;
+    -webkit-box-shadow: rgb(5, 5, 5) 5px 4px 5px 2px;
+    box-shadow: rgb(5, 5, 5) 5px 4px 5px 2px;
+    background-color: rgba(5,5,5,0.6);
+    .footer-content{
+        float: right;
+        font-size: $footer-height;
+    }
+}

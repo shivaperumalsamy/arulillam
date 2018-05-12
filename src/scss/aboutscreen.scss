@@ -1,0 +1,63 @@
+@import '_variable';
+@import '_mixin';
+@import '_commons';
+/* Start about wrapper styles */
+
+.wrapper_AboutHeaderandContent{
+
+    position: relative;
+    @include boxSize(100%,100%); 
+
+    .contentHeader{         
+        @include boxSize(92%,20%);      
+        p{
+            @extend .header;
+            border-bottom: 2px solid unquote("#"+nth($menuColors , 2 ));
+            color: unquote("#"+nth($menuColors , 2 ));
+        }
+    }
+
+}
+
+
+.wrapper_aboutwrapper{
+    @include boxSize(80%,60%); 
+    position: absolute; 
+    top: 10%;
+    @include margin(10%, '', '', 5.5%);
+    min-width: 600px;
+
+    .about_area{
+        float: left;
+        @include boxSize(55%,100%); 
+        @include padding('', 5%, '', 3%);
+        text-align: justify;
+       // @include margin(-2%,'','','');
+
+        .content{
+            overflow: auto;
+            line-height: 24px;
+            @include boxSize(100%,100%); 
+            color: rgb(240, 240, 240);
+            @include padding(15px, 15px, 15px, 15px);
+
+          &::first-letter{
+              font-size: 32px;  
+              font-family: $pacifico-font;
+            }
+        }
+    }
+    .about_photo{
+        float: left;
+        @include boxSize(35%,100%); 
+        @include margin('','','',5%);
+        @include padding(15px, 15px, 15px, 15px);
+
+        div{
+            @include boxSize(100%,100%); 
+            border-radius: 2%;
+            box-shadow: 0 0 15px 5px $about-shadow ;
+        }
+    }
+}
+

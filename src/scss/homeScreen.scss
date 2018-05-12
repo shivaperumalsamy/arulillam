@@ -1,0 +1,18 @@
+@import '_variable';
+@import '_mixin';
+
+/*--- START : Home Wrapper Styles ---*/
+.height-100vh{
+    height: 100vh;
+}
+.bounce-loader{
+    position: absolute;
+    top: unquote("-webkit-calc(50% - 50px)");
+    left: unquote("-webkit-calc(50% - 50px)");
+    top: unquote("calc(50% - 50px)");
+    left: unquote("calc(50% - 50px)");
+}
+/*--- END : Home Wrapper Styles ---*/
+
+
+

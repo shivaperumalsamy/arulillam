@@ -1,0 +1,51 @@
+@import '_variable';
+@import '_mixin';
+
+/* Start timeline wrapper styles */
+.wrapper-timelinewrapper{
+    @include boxSize(100%,100%);
+    .timeline-header{
+        position: relative;
+        //border-bottom: 2px solid unquote("#"+nth($menuColors , 3 ));
+        .timeline-heading{
+            //position: absolute;
+            //top: 50%;
+            @extend .header;
+            border-bottom: 2px solid unquote("#"+nth($menuColors , 3 ));
+            color: unquote("#"+nth($menuColors , 3 ));
+        }
+    } 
+    .timeline-viewpane{
+        @include boxSize(100%,$timeline-body-height) ;
+        width: 92%;
+        position: relative;
+        .timeline-line{
+            position: absolute;
+            top:35%;
+            img{
+                width: 100%
+            } 
+        }
+        .scrollContainer{
+            position: absolute;
+            top: 33%;
+            width: 100%;
+            .fa.scrollContainer__scrollRight{
+                float: right;
+                //margin-right: 10%;
+                font-size: 40px;
+                //margin-top: -10%;
+              }
+              
+              .fa.scrollContainer__scrollLeft{
+                float: left;
+                font-size: 40px;
+                //margin-left: 2.5%;
+                //margin-top: -10%;
+              }
+              .clear{
+                float: none;
+              }
+        }
+    }
+}

@@ -1,0 +1,55 @@
+@import '_variable';
+@import '_mixin';
+@import '_commons';
+
+/*--- START : Home Wrapper Styles ---*/
+
+
+.contactBarWrapper{	
+	@include boxSize(30%, 100%);	
+	margin-right: -35%;
+	transition: margin 1s ease-in-out;	
+	position: fixed;
+	z-index: 8;
+	top : 0px; 
+	right: 0px;
+	background-color : $theme-dark;
+
+	.contactBarWrapper__closeIcon{
+			padding: 16px 0px 10px 25px;
+    		font-size: 40px;
+			font-family: 'Linearicons-Free';
+			cursor: pointer;
+	  		 &::after{
+	   			content :   $closeIcon;     
+        		color:  $theme-light;
+	   		} 
+	}
+	.contactBarWrapper__contactInfo{
+	          @include margin('','','',90px);
+	      
+			.contactHeader{
+				width: 85%;
+				color: $contactPageThemeColor;
+				@extend .header;
+				@include margin('','','',0px);
+				border-bottom: 2px solid $contactPageThemeColor;
+			}
+			
+			.contact{
+				display: inline-block;
+				color: #00B2EE;
+				@include margin(40px);
+				&.content{
+					@include padding('','','',40px);
+				}
+			}
+			.icon{
+				font-size: $fontsize-M;
+			}
+			
+	 } 
+	
+}
+
+/*--- END : Home Wrapper Styles ---*/
